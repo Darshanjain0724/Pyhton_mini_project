@@ -33,5 +33,5 @@ def QA(Questions):
       score += 1
     else:
       print(f"Incorrect, The correct answer is {Question["Answer"]}")
-
+  print(f"Your final score is {score} out of {len(Questions)}")
 QA(Questions)
