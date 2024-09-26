@@ -27,6 +27,11 @@ def QA(Questions):
     print(Question["prompt"])
     for opi in Question["Options"]:
       print(opi)
-    ans = input("Enter your answer: ")
+    ans = input("Enter your answer: ").upper()
+    if ans == Question["Answer"]:
+      print("Correct")
+      score += 1
+    else:
+      print(f"Incorrect, The correct answer is {Question["Answer"]}")
 
 QA(Questions)
